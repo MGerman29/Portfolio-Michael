@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Michael German</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="#home">
+                    <img src="./images/Logo.png" alt="Logo Michael German" />
+                </a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#home">HOME</a></li>
+                    <li><a class="nav-link" href="#about">ABOUT ME</a></li>
+                    <li><a class="nav-link" href="#knowledge">KNOWLEDGE</a></li>
+                    <li><a class="nav-link" href="#projects">PROJECTS</a></li>
+                    <li><a class="nav-link" href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+    <div class="hero-content">
+    <div class="hero-text">
+      <h1>MICHAEL GERMAN</h1>
+      <p>Junior Full Stack Developer</p>
+    </div>
+
+    <a href="#about" class="hero-flecha" aria-label="Ir a About Me">
+      <span></span>
+    </a>
+  </div>
+</section>
+
+  <section class="about" id="about">
+    <h2 class="about-title">ABOUT ME</h2>
+
+    <div class="about-content">
+      <div class="about-photo-wrap">
+        <img class="about-photo" src="./images/perfil.png" alt="Michael German" />
+      </div>
+
+      <div class="about-text">
+        <p>
+          Soy Michael German, Junior Full Stack Developer de Buenos Aires, Argentina.
+          Me enfoco en el desarrollo de sitios y aplicaciones web modernas,
+          priorizando interfaces claras, experiencia de usuario y código mantenible.
+        </p>
+
+        <p>
+          Me formé en desarrollo full stack y vengo construyendo proyectos con
+          tecnologías del ecosistema frontend y backend, buscando siempre aplicar
+          buenas prácticas, estructura clara y soluciones simples.
+        </p>
+
+        <p>
+          Actualmente estoy enfocado en seguir creciendo profesionalmente, sumar
+          experiencia real en equipos de desarrollo y construir una base sólida
+          para insertarme en el mundo laboral tech.
+        </p>
+      </div>
+
+      <div class="cv-links">
+        <a class="cv-btn" href="./assets/cv/cv-english.pdf" target="_blank" rel="noopener noreferrer">
+          Download CV-English
+        </a>
+        <a class="cv-btn" href="./images/CV_MichaelGerman.pdf" target="_blank" rel="noopener noreferrer">
+          Download CV-Spanish
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="knowledge" id="knowledge">
+    <h2 class="knowledge-title">KNOWLEDGE</h2>
+
+    <div class="knowledge-grid">
+      <div class="knowledge-visual">
+        <img src="./images/know.svg" alt="Tecnologías" />
+      </div>
+
+      <div class="knowledge-list">
+        <article class="knowledge-item">
+          <div class="knowledge-number">1</div>
+          <div class="knowledge-info">
+            <h3>FRONT-END</h3>
+            <p>HTML5 - CSS3 - JavaScript - React - React Router</p>
+          </div>
+        </article>
+
+        <article class="knowledge-item">
+          <div class="knowledge-number">2</div>
+          <div class="knowledge-info">
+            <h3>BACK-END</h3>
+            <p>Node.js - Express</p>
+          </div>
+        </article>
+
+        <article class="knowledge-item">
+          <div class="knowledge-number">3</div>
+          <div class="knowledge-info">
+            <h3>DATABASES / SERVICES</h3>
+            <p>MongoDB - Firebase</p>
+          </div>
+        </article>
+
+        <article class="knowledge-item">
+          <div class="knowledge-number">4</div>
+          <div class="knowledge-info">
+            <h3>OTHERS</h3>
+            <p>Git - GitHub - Vercel - Netlify - Responsive Design</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 class="projects-title">PROJECTS</h2>
+
+    <div class="projects-grid">
+      <article class="project-card">
+        <img class="project-image" src="./images/todo-cover.png" alt="ToDo App" />
+        <div class="project-overlay">
+          <div class="project-content">
+            <h3>ToDo-App</h3>
+            <p>React app with tasks, filters and localStorage.</p>
+            <a
+              class="project-btn"
+              href="https://to-do-app-react-six-self.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img class="project-image" src="./images/barber-cover.png" alt="Landing Page Barberia" />
+        <div class="project-overlay">
+          <div class="project-content">
+            <h3>Landing-Page-Barberia</h3>
+            <p>Responsive landing page with modern layout and visual identity.</p>
+            <a
+              class="project-btn"
+              href="https://superlative-zuccutto-88cb42.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img class="project-image" src="./images/auth-cover.png" alt="Firebase Auth" />
+        <div class="project-overlay">
+          <div class="project-content">
+            <h3>Firebase-Auth</h3>
+            <p>Authentication flow with protected routes and persisted session.</p>
+            <a
+              class="project-btn"
+              href="https://firebase-auth-p0mwjbe0b-mgerman29s-projects.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img class="project-image" src="./images/movie-cover.png" alt="Movie Search App" />
+        <div class="project-overlay">
+          <div class="project-content">
+            <h3>Movie-Search-App</h3>
+            <p>Movie search app with API consumption and dynamic results.</p>
+            <a
+              class="project-btn"
+              href="https://movie-search-app-beta-cyan.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="contact-title">CONTACT</h2>
+    <p class="contact-text">
+      Podés encontrarme en GitHub y LinkedIn para ver mis proyectos y mi perfil profesional.
+    </p>
+
+    <div class="contact-links">
+      <a
+        class="contact-link"
+        href="https://github.com/MGerman29"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+      <a
+        class="contact-link"
+        href="https://www.linkedin.com/in/mgerman393/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Michael German. All rights reserved.</p>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
